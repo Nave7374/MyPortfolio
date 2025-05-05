@@ -116,7 +116,7 @@ function Contact(){
                       <div>
                         {links.map((link)=>{
                             return (
-                                <a key={link.id} href={link.link} target="_blank"><span className="icons-info"><i className={link.icon}></i></span></a>
+                                <a key={link.id} href={link.link} target="_blank"  rel="noreferrer"><span className="icons-info"><i className={link.icon}></i></span></a>
                             )
                         })}
                       </div>

@@ -47,7 +47,7 @@ function About() {
                   <div className="row">
                     <div className="col-sm-6 col-md-5">
                       <div className="about-img">
-                        <img src="/assets/images/Naveen Image1.jpg" alt="About Image" className="img-fluid about-img-tag"/>
+                        <img src="/assets/images/Naveen Image1.jpg" alt="About-photo" className="img-fluid about-img-tag"/>
                       </div>
                     </div>
                     <div className="col-sm-6 col-md-5">
