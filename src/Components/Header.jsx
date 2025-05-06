@@ -11,6 +11,15 @@ function Header() {
     { id: 5, link: "#contact", title: "Contact" },
   ];
 
+  function handleClick() {
+    const element = document.getElementById("navbarNav");
+    if (element && element.classList.contains("show")) {
+      element.classList.remove("show");
+    }else if (element && !element.classList.contains("show")) {
+      element.classList.add("show");
+    }
+  }
+
   return (
     <header id="header" className="fixed-top">
       <nav className="navbar navbar-expand-lg p-3">
@@ -36,7 +45,7 @@ function Header() {
           <ul className="navbar-nav ms-auto">
             {navitem.map((item) => (
               <li className="nav-item Hi" key={item.id}>
-                <a className="nav-link" href={item.link}>
+                <a className="nav-link" href={item.link} onClick={handleClick}>
                   {item.title}
                 </a>
               </li>

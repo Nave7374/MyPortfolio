@@ -6,6 +6,7 @@ import Service from "./Service";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Projects from "./Projects";
+import Button from "./Button";
 
 function App(){
     
@@ -17,6 +18,7 @@ function App(){
             <Projects />
             <Contact />
             <Footer />
+            <Button />
         </div>);
 
 }
