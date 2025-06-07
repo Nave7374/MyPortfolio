@@ -14,18 +14,21 @@ function About() {
     {id: 5, title: "SQL", percentage: "90%", value: "90", ariaValuenow: "90"},
   ];
 
-  useEffect(() => {
-    AOS.init({
-      duration: 600,
-      easing: 'ease-in-out',
-      once: true,
-      startEvent: 'load',
-      mirror: false
-    });
-  
+ 
     // Allow React rendering to settle before refreshing
-    setTimeout(() => AOS.refresh(), 0);
-  }, []);
+    useEffect(() => {
+      if (window.innerWidth < 768) {
+        AOS.init({ disable: true });
+      } else {
+        AOS.init({
+          duration: 600,
+          easing: 'ease-in-out',
+          once: true,
+          mirror: false,
+        });
+        setTimeout(() => AOS.refresh(), 0);
+      }
+    }, []);
   
 
   // Function to handle progress bar animation
