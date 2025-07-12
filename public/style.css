@@ -6,6 +6,10 @@ link[rel="icon"] {
     overflow: hidden!important;
 }
 
+section{
+    scroll-margin-top:40px;
+}
+
 body{
     scroll-behavior: smooth;
     background-color: beige!important;

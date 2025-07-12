@@ -1,6 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./Header";
+import About from "./About";
+import Service from './Service';
+import Projects from './Projects';
+import Contact from './Contact';
+import Footer from "./Footer";
+import Button from "./Button";
 
 
 function Home() {
@@ -30,7 +37,8 @@ function Home() {
     };
   }, []);
 
-  return (
+  return (<>
+    <Header />
     <section
       className="container-fluid bg-image"
       id="home"
@@ -49,6 +57,13 @@ function Home() {
         </div>
       </div>
     </section>
+    <About />
+    <Service />
+    <Projects />
+    <Contact />
+    <Footer />
+    <Button />
+    </>
   );
 }
 

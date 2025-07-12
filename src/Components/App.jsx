@@ -1,25 +1,16 @@
 import React from "react";
-import Header from "./Header";
 import Home from "./Home";
-import About from "./About";
-import Service from "./Service";
-import Contact from "./Contact";
-import Footer from "./Footer";
-import Projects from "./Projects";
-import Button from "./Button";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProjectDescription from "./ProjectDescription";
 
 function App(){
     
-    return(<div className="App">
-            <Header />
-            <Home />
-            <About />
-            <Service />
-            <Projects />
-            <Contact />
-            <Footer />
-            <Button />
-        </div>);
+    return(<Router>
+       <Routes>
+            <Route path="/" element={<div className="App"><Home /></div>}/>
+            <Route path="/projects/projectid/:id" element={<ProjectDescription />} />  
+       </Routes>
+    </Router>);
 
 }
 export default App;
