@@ -1,14 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 function Projects() {
   
   const project = [
-    { id: 1, name: "Transport Management System", type: "web service", img: "./assets/images/tmsbase.jpg" },
-    { id: 2, name: "Bank Application", type: "Application", img: "" },
-    { id: 3, name: "Student Management System", type: "web Application", img: "" },
-    { id: 4, name: "To-do List", type: "web site", img: "" },
-    { id: 5, name: "Keeper App", type: "web site", img: "" },
-    { id: 6, name: "Notepad Clone Application", type: "Application", img: "" },
+    { id: 1, name: "Transport Management System", type: "web service", img: "./assets/images/tms/tmsbase.jpg" },
+    { id: 2, name: "Bank Application", type: "Application", img: "./assets/images/bank/bankapp.jpg" },
+    { id: 3, name: "Student Management System", type: "web Application", img: "./assets/images/sms/sms.jpg" },
+    { id: 4, name: "To-do List", type: "web site", img: "./assets/images/todo/todo.jpg" },
+    { id: 5, name: "Keeper App", type: "web site", img: "./assets/images/keeper/keeper.jpg" },
+    { id: 6, name: "Notepad Clone Application", type: "Application", img: "./assets/images/notepad/notepad.jpg" },
   ];
 
   return (
